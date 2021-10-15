@@ -1,120 +1,133 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-		/>
-
+		<title>Unknobody - My work</title>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<title>Unknow Dev</title>
+		<link rel="stylesheet" href="assets/css/prism.css" />
 	</head>
 	<body>
-		<header>
-			<nav>
-				<ul>
-					<li id="logo">
-						<a href="#">Unknow Dev</a>
-					</li>
-					<li><a href="#contact-me">Contact</a></li>
+		<nav id="main-nav">
+			<ul>
+				<li id="logo">
+					<a href="#">Unknobody</a>
+				</li>
+				<li><a href="#contact">Contact</a></li>
 
-					<li><a href="#">A propos</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Accueil</a></li>
-				</ul>
-			</nav>
+				<li><a href="#about">A propos</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#">Accueil</a></li>
+			</ul>
+		</nav>
 
-			<div id="big-header">
-				<h1>Unknow Dev</h1>
-				<div id="trait"></div>
-				<h3>Developpeur Front-End.</h3>
+		<header id="main-header">
+			<div id="headerBlock">
+				<div id="headerTitle">
+					<p>Bonjour, je suis</p>
+					<div class="word">
+						<span class="myPink">U</span>
+						<span>N</span>
+						<span>K</span>
+						<span>N</span>
+						<span>O</span>
+						<span>B</span>
+						<span>O</span>
+						<span>D</span>
+						<span>Y</span>
+					</div>
+				</div>
+				<div id="headerSubtitle">
+					<p>Développeur Front-End autodidacte</p>
+				</div>
+				<div id="header-button">
+					<p>
+						<button class="btn">Me contacter</button>
+					</p>
+				</div>
+			</div>
+
+			<div id="presentation">
+				<pre class="language-javascript"><code>
+{
+    ID : "Pierre Bruyère";
+    Rôle : "Développeur Front-End";
+
+    Email: "Unknowbody@outlook.com";
+    Adresse: "Rue de la Gare 12";
+    Ville: "Spa, Belgique";
+
+    
+
+}
+                </code></pre>
+				<div class="separation"></div>
+				<pre class="language-javascript"><code>
+{
+    Compétences: ["HTML", "CSS", "Photoshop", "Illustrator"]
+    Parcours : {
+        "2020 - 2021": "Apprentissage toujours en cours de Python et Javascript"
+        "2000 - 2021": "Apprentissage en autodidacte de Photoshop";
+        "2010 - 2011" : "Apprentissage du HTML et CSS toujours en autodidacte"
+    }
+    
+                                                    </code></pre>
 			</div>
 		</header>
 
-		<section id="presentation">
-			<div id="text-presentation">
-				<h2>Des sites web de qualité.</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aliquid
-					animi iusto eius nulla quasi nobis iure quibusdam vel minima
-					cupiditate veniam natus suscipit, dicta dolores sed deleniti
-					laboriosam, facere qui ea a? Officiis rerum aliquam, eos ipsum
-					voluptatum consectetur et omnis architecto quaerat quae consequuntur
-					ducimus alias debitis rem suscipit minima obcaecati voluptatem nisi
-					reprehenderit blanditiis vel dicta natus esse aut. Voluptate maxime
-					cumque earum officiis magnam. Quis illum, ullam molestias ut
-					exercitationem hic.
-				</p>
-			</div>
-			<!-- Fin #text-presentation -->
-
-			<div id="services">
-				<div class="images-services">
-					<h4>Sites vitrines</h4>
-					<a href="#"
-						><img
-							src="/assets/images/site-vitrine.jpg"
-							alt="Exemples de sites vitrines"
-							title="Sites vitrines"
-					/></a>
+		<main>
+			<section id="portfolio">
+				<div class="mesCompetences">
+					<h2>Mes compétences</h2>
+					<h3>Html</h3>
+					<progress id="project" max="100" value="90">90%</progress>
+					<h3>CSS</h3>
+					<progress id="project" max="100" value="70">70%</progress>
+					<h3>Javascript</h3>
+					<progress id="project" max="100" value="25">25%</progress>
+					<h3>Photoshop</h3>
+					<progress id="project" max="100" value="90">90%</progress>
 				</div>
 
-				<div class="images-services">
-					<h4>Wordpress</h4>
-					<a href="#"
-						><img
-							src="/assets/images/wordpress.png"
-							alt="Exemples de sites vitrines"
-							title="Sites vitrines"
-					/></a>
+				<div class="portfolio-images">
+					<div class="grid-wrapper">
+						<div class="wide">
+							<img src="assets/images/multilucas.JPG" alt="" />
+						</div>
+						<div class="tall">
+							<img src="assets/images/melocadres.JPG" alt="" />
+						</div>
+						<div class="">
+							<img src="assets/images/sografik.JPG" alt="" />
+						</div>
+						<div class="big">
+							<img src="assets/images/punk.jpg" alt="" />
+						</div>
+						<div class="">
+							<img src="assets/images/sografik.JPG" alt="" />
+						</div>
+						<div class="">
+							<img src="assets/images/sografik.JPG" alt="" />
+						</div>
+					</div>
 				</div>
+			</section>
 
-				<div class="images-services">
-					<h4>Réseaux sociaux</h4>
-					<a href="#"
-						><img
-							src="/assets/images/reseaux.jpg"
-							alt="Exemples de sites vitrines"
-							title="Sites vitrines"
-					/></a>
+			<section id="about">
+				<div class="title">
+					<h2>A propos</h2>
 				</div>
-			</div>
-			<!-- Fin #services -->
-		</section>
-		<!-- Fin #presentation-->
+			</section>
 
-		<footer>
-			<h2 id="contact-me">Me contacter</h2>
-
-			<form>
-				<input placeholder="Nom" />
-				<input placeholder="Email" />
-				<textarea placeholder="Votre message ici..."></textarea>
-				<button>Envoyer</button>
-			</form>
-
-			<div id="deuxiemeTrait"></div>
-
-			<div id="copyrightAndIcons">
-				<div id="copyright">
-					<span>© Unknobody: 2021</span>
+			<section id="contact">
+				<div class="title">
+					<h2>Contact</h2>
 				</div>
+			</section>
+		</main>
 
-				<div id="icones">
-					<a href="http://www.twitter.fr" target="_blank"
-						><i class="fa fa-twitter"></i
-					></a>
-					<a href="http://www.facebook.fr" target="_blank"
-						><i class="fa fa-facebook"></i
-					></a>
-					<a href="http://www.instagram.com" target="_blank"
-						><i class="fa fa-instagram"></i
-					></a>
-				</div>
-			</div>
-		</footer>
+		<script src="assets/js/prism.js"></script>
+		<script src="assets/js/header.js"></script>
 	</body>
 </html>

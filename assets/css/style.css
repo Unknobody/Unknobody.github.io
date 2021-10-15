@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&display=swap");
+:root {
+	--mainBackground: #1d1d1d;
+	--secondBackground: #4d4b4b;
+	--myPink: #f74b56;
+	--myBlue: #58f2d8;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--mainBackground);
+	color: white;
+	font-size: 1.6rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--myBlue);
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Economica", sans-serif;
+}
+
+.specialLetter {
+	color: var(--myPink);
+	text-shadow: -5px 0 0 var(--myBlue);
+}
+
+/* ***************************************** NAVBAR ************************** */
+#main-nav {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background-color: var(--mainBackground);
+	z-index: 2000;
+	box-shadow: 0px 0px 3px black;
+}
+
+#main-nav ul {
+	padding-right: 50px;
+}
+
+#main-nav li {
+	float: right;
+	list-style: none;
+}
+
+#main-nav li a {
+	display: block;
+	text-align: center;
+	padding: 18px 16px;
+	border-bottom: 2px solid transparent;
+	transition: 0.9s;
+}
+
+#main-nav li a:hover {
+	border-bottom: 2px solid var(--myBlue);
+}
+
+#main-nav #logo {
+	font-family: "Economica", sans-serif;
+	font-weight: bold;
+	float: left;
+	padding-left: 50px;
+}
+
+#main-nav #logo a {
+	border-bottom: 2px solid transparent;
+}
+
+#main-nav #logo a:hover {
+	border-bottom: 2px solid transparent;
+	color: var(--myPink);
+}
+
+/* ***************************************** homepage ************************** */
+main {
+}
+
+#homepage {
+	height: 100vh;
+	background-color: var(--mainBackground);
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#homeText {
+	text-align: right;
+}
+
+#homeText h1 {
+	font-size: 6rem;
+}
