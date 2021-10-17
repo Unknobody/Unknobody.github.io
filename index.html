@@ -1,130 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Unknobody - My work</title>
+		<!-- feuille de style principale -->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/prism.css" />
+		<!-- import de font-awesome -->
+		<link
+			href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+			rel="stylesheet"
+		/>
+		<title>Unknow - Website</title>
 	</head>
 	<body>
-		<nav id="main-nav">
-			<ul>
-				<li id="logo">
-					<a href="#">Unknobody</a>
-				</li>
-				<li><a href="#contact">Contact</a></li>
-
-				<li><a href="#about">A propos</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#">Accueil</a></li>
-			</ul>
-		</nav>
-
-		<header id="main-header">
-			<div id="headerBlock">
-				<div id="headerTitle">
-					<p>Bonjour, je suis</p>
-					<div class="word">
-						<span class="myPink">U</span>
-						<span>N</span>
-						<span>K</span>
-						<span>N</span>
-						<span>O</span>
-						<span>B</span>
-						<span>O</span>
-						<span>D</span>
-						<span>Y</span>
-					</div>
-				</div>
-				<div id="headerSubtitle">
-					<p>Développeur Front-End autodidacte</p>
-				</div>
-				<div id="header-button">
-					<p>
-						<button class="btn">Me contacter</button>
-					</p>
-				</div>
-			</div>
-
-			<div id="presentation">
-				<pre class="language-javascript"><code>
-{
-    ID : "Pierre Bruyère";
-    Rôle : "Développeur Front-End";
-
-    Email: "Unknowbody@outlook.com";
-    Adresse: "Rue de la Gare 12";
-    Ville: "Spa, Belgique";
-
-    
-
-}
-                </code></pre>
-				<div class="separation"></div>
-				<pre class="language-javascript"><code>
-{
-    Compétences: ["HTML", "CSS", "Photoshop", "Illustrator"]
-    Parcours : {
-        "2020 - 2021": "Apprentissage toujours en cours de Python et Javascript"
-        "2000 - 2021": "Apprentissage en autodidacte de Photoshop";
-        "2010 - 2011" : "Apprentissage du HTML et CSS toujours en autodidacte"
-    }
-    
-                                                    </code></pre>
-			</div>
-		</header>
-
 		<main>
-			<section id="portfolio">
-				<div class="mesCompetences">
-					<h2>Mes compétences</h2>
-					<h3>Html</h3>
-					<progress id="project" max="100" value="90">90%</progress>
-					<h3>CSS</h3>
-					<progress id="project" max="100" value="70">70%</progress>
-					<h3>Javascript</h3>
-					<progress id="project" max="100" value="25">25%</progress>
-					<h3>Photoshop</h3>
-					<progress id="project" max="100" value="90">90%</progress>
-				</div>
-
-				<div class="portfolio-images">
-					<div class="grid-wrapper">
-						<div class="wide">
-							<img src="assets/images/multilucas.JPG" alt="" />
-						</div>
-						<div class="big">
-							<img src="assets/images/punk.jpg" alt="" />
-						</div>
-						<div class="tall">
-							<img src="assets/images/melocadres.JPG" alt="" />
-						</div>
-						<div class="tall">
-							<img src="assets/images/taggueur.png" alt="" />
-						</div>
-						<div class="wide">
-							<img src="assets/images/sografik.JPG" alt="Logo" />
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="about">
-				<div class="title">
-					<h2>A propos</h2>
-				</div>
-			</section>
-
-			<section id="contact">
-				<div class="title">
-					<h2>Contact</h2>
-				</div>
-			</section>
+			<nav>
+				<ul>
+					<li data-title="C'est un faux-lien :)">
+						<span class="underline">F</span>ile
+					</li>
+					<li data-title="Ces liens n'en sont pas !">
+						<span class="underline">E</span>dit
+					</li>
+					<li data-title="Inutile d'insister, rien n'y fera !">
+						<span class="underline">S</span>election
+					</li>
+					<li data-title="C'est juste pour décorer.">
+						<span class="underline">D</span>isplay
+					</li>
+					<li
+						data-title="A propos : Cette page est entièrement créée en HTML et CSS"
+					>
+						<span class="underline">A</span>bout
+					</li>
+					<li
+						data-title="Besoin d'aide sur un site vide ? Je ne pense pas non !"
+					>
+						<span class="underline">H</span>elp
+					</li>
+					<li class="right" data-title="Une simple croix en fait !">
+						<i class="fas fa-times"></i>
+					</li>
+					<li class="right" data-title="C'est bien assez grand comme ça !">
+						<i class="fas fa-expand"></i>
+					</li>
+					<li
+						class="right"
+						data-title="Impossible de minimiser cette fenêtre actuellement, merci de nous en excuser..."
+					>
+						<i class="fas fa-minus"></i>
+					</li>
+				</ul>
+			</nav>
+			<div class="main-content">
+				<h1>
+					<span class="special-letter rl">U</span>nkno<span
+						class="special-letter rr"
+						>b</span
+					>ody
+				</h1>
+				<p>Site web en construction</p>
+			</div>
 		</main>
-
-		<script src="assets/js/prism.js"></script>
-		<script src="assets/js/header.js"></script>
 	</body>
 </html>
