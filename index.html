@@ -1,67 +1,441 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- feuille de style principale -->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- import de font-awesome -->
-		<link
-			href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
-			rel="stylesheet"
-		/>
-		<title>Unknow - Website</title>
-	</head>
-	<body>
-		<main>
-			<nav>
-				<ul>
-					<li data-title="C'est un faux-lien :)">
-						<span class="underline">F</span>ile
-					</li>
-					<li data-title="Ces liens n'en sont pas !">
-						<span class="underline">E</span>dit
-					</li>
-					<li data-title="Inutile d'insister, rien n'y fera !">
-						<span class="underline">S</span>election
-					</li>
-					<li data-title="C'est juste pour décorer.">
-						<span class="underline">D</span>isplay
-					</li>
-					<li
-						data-title="A propos : Cette page est entièrement créée en HTML et CSS"
-					>
-						<span class="underline">A</span>bout
-					</li>
-					<li
-						data-title="Besoin d'aide sur un site vide ? Je ne pense pas non !"
-					>
-						<span class="underline">H</span>elp
-					</li>
-					<li class="right" data-title="Une simple croix en fait !">
-						<i class="fas fa-times"></i>
-					</li>
-					<li class="right" data-title="C'est bien assez grand comme ça !">
-						<i class="fas fa-expand"></i>
-					</li>
-					<li
-						class="right"
-						data-title="Impossible de minimiser cette fenêtre actuellement, merci de nous en excuser..."
-					>
-						<i class="fas fa-minus"></i>
-					</li>
-				</ul>
-			</nav>
-			<div class="main-content">
-				<h1>
-					<span class="special-letter rl">U</span>nkno<span
-						class="special-letter rr"
-						>b</span
-					>ody
-				</h1>
-				<p>Site web en construction</p>
-			</div>
-		</main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pierre Bruyère : Portfolio</title>
+    <!-- feuille de style principale -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- import de font-awesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- lien vers la police d'écriture -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="menu">
+        <ion-icon name="pulse-outline" class="pulse"></ion-icon>
+        <ul class="nav">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">CV</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p></p>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Page Accueil -->
+      <section id="accueil" class="page accueil active">
+        <div class="header">
+          <!-- L'image du header de la page d'accueil -->
+          <div class="header-img">
+            <img src="assets/images/logo.JPG" alt="" />
+          </div>
+          <div class="header-content">
+            <div class="header-content-wrapper">
+              <h1 class="name">
+                <span class="special-letter">P</span>ierre
+                <span class="special-letter">B</span>ruyère
+              </h1>
+              <p class="title"><span class="typing"></span></p>
+
+              <div class="desc">
+                <p>
+                  Autodidacte depuis plus de vingt ans dans différents domaines
+                  tels que la bureautique, le graphisme et le développement web.
+                </p>
+                <p>
+                  Je réalise vos projets de manière professionnelle avec l'amour
+                  d'un artisan.
+                </p>
+              </div>
+              <!-- Fin .desc-->
+
+              <!-- bouton contact -->
+              <a href="#" class="btn-primary">Me contacter</a>
+            </div>
+            <!-- Fin .header-content-wrapper-->
+          </div>
+          <!-- Fin .header-content -->
+        </div>
+        <!-- Fin .header-->
+
+        <div class="subheader">
+          <div class="about">
+            <h2>Mes compétences</h2>
+
+            <div class="grid-item">
+              <div class="item">
+                <div class="item-icon">
+                  <ion-icon name="logo-html5"></ion-icon>
+                </div>
+                <div class="item-wrapper">
+                  <h3>HTML</h3>
+                  <p>
+                    J'ai commencé à l'envers, j'ai découvert le CSS avant le
+                    HTML en modifiant des sites web, ce qui m'a permis de
+                    découvrir les bases. J'ai pu vraiment apprécier le HTML
+                    quand j'ai voulu créer mon premier site web personnel.
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-icon">
+                  <ion-icon name="logo-css3"></ion-icon>
+                </div>
+                <div class="item-wrapper">
+                  <h3>CSS</h3>
+                  <p>
+                    Les styles en cascade :) <br />
+                    Le langage qui m'a fait découvrir le HTML puis les autres.
+                    Le langage qui m'a permis d'unir graphisme et web design.
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-icon">
+                  <ion-icon name="brush-outline"></ion-icon>
+                </div>
+                <div class="item-wrapper">
+                  <h3>Photoshop</h3>
+                  <p>
+                    Je crée sur Photoshop depuis une vingtaine d'années. J'ai
+                    réellement commencé à apprécier Photoshop en réalisant des
+                    montages photos de ma fille. Rapidement, j'ai créé des
+                    montages, cartes de visite, logos,... pour d'autres et par
+                    pur plaisir.
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-icon">
+                  <ion-icon name="logo-javascript"></ion-icon>
+                </div>
+                <div class="item-wrapper">
+                  <h3>Javascript</h3>
+                  <p>
+                    Après des années sans réel projet j'ai décidé de me mettre
+                    au Javascript mi-2021. Apprentissage toujours en cours et
+                    passionnant. Ce Portfolio est d'ailleurs mon site premier
+                    intégrant du Javascript.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Fin .grid-item -->
+          </div>
+          <!-- Fin .about -->
+
+          <!-- Frameworks -->
+          <div class="frameworks">
+            <div class="frameworks-row">
+              <img src="assets/images/client-1.png" alt="" />
+              <img src="assets/images/client-2.png" alt="" />
+              <img src="assets/images/client-5.png" alt="" />
+              <img src="assets/images/client-6.png" alt="" />
+            </div>
+          </div>
+          <!-- Fin .frameworks -->
+        </div>
+        <!-- Fin .subheader -->
+      </section>
+      <!-- Fin page Accueil-->
+
+      <!-- Page CV -->
+      <section id="cv" class="page cv">
+        <h1 class="section-heading">Curriculum Vitaë</h1>
+        <h4 class="section-sub-heading">Mes expériences digitales</h4>
+
+        <div class="cv-row">
+          <div class="wrapper">
+            <div class="edu">
+              <h2>Apprentissages</h2>
+
+              <div class="grid-item">
+                <h4 class="year">1995</h4>
+                <div class="edu-name">Paint, Gimp, et... Photoshop</div>
+                <p class="company">Autodidacte</p>
+                <p class="edu-desc">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil magni assumenda eius incidunt reiciendis iusto.
+                </p>
+
+                <div class="divider"></div>
+              </div>
+
+              <div class="grid-item">
+                <h4 class="year">2000</h4>
+                <div class="edu-name">HTML et CSS</div>
+                <p class="company">Openclassroom</p>
+                <p class="edu-desc">
+                  Openclassroom (à l'époque "Le site du Zéro") m'a fait
+                  découvrir les bases du HTML et de CSS
+                </p>
+
+                <div class="divider"></div>
+              </div>
+
+              <div class="grid-item">
+                <h4 class="year">2001</h4>
+                <div class="edu-name">Premiers sites persos</div>
+                <p class="company">Sites Gaming</p>
+                <p class="edu-desc">
+                  A 20 ans, j'ai créé et géré un site web consacré à Counter
+                  Strike Source, un jeu sans prétention qui fut vite oublié ^^
+                  <br />
+                  J'ai également créé des sites pour des teams de Virtual
+                  Racing.
+                </p>
+
+                <div class="divider"></div>
+              </div>
+
+              <div class="grid-item">
+                <h4 class="year">2003</h4>
+                <div class="edu-name">Premiers Frameworks</div>
+                <p class="company">
+                  Phpbb<br />Joomla<br />Bootstrap<br />Wordpress
+                </p>
+                <p class="edu-desc">
+                  Pour aller plus loin dans le développement de sites
+                  dynamiques. J'ai appris à gérer des forums Phpbb, à ajouter
+                  des modules et plugins. La création de thèmes Wordpress était
+                  la suite logique.
+                </p>
+
+                <div class="divider"></div>
+              </div>
+            </div>
+            <!-- Fin edu-->
+          </div>
+          <!-- Fin wrapper -->
+
+          <div class="wrapper">
+            <!-- Skill -->
+            <div class="design-skill">
+              <h2>Design</h2>
+
+              <div class="progress-detail">
+                <div class="progress-name">Montages photos</div>
+                <div class="progress-percent">100%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 100%"></div>
+              </div>
+
+              <div class="progress-detail">
+                <div class="progress-name">Création de Logos</div>
+                <div class="progress-percent">75%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+              </div>
+
+              <div class="progress-detail">
+                <div class="progress-name">Cartes de visite</div>
+                <div class="progress-percent">95%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="coding-skill">
+              <h2>Web Dev</h2>
+
+              <div class="progress-detail">
+                <div class="progress-name">HTML & CSS</div>
+                <div class="progress-percent">90%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+
+              <div class="progress-detail">
+                <div class="progress-name">Javascript</div>
+                <div class="progress-percent">50%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 50%"></div>
+              </div>
+
+              <div class="progress-detail">
+                <div class="progress-name">Bootstrap</div>
+                <div class="progress-percent">95%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 95%"></div>
+              </div>
+
+              <div class="progress-detail">
+                <div class="progress-name">Wordpress</div>
+                <div class="progress-percent">85%</div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn-primary">Télécharger mon CV</a>
+
+        <!-- Fin cv-row -->
+      </section>
+      <!-- Fin page CV-->
+
+      <!-- Page Portfolio -->
+      <section id="portfolio" class="page portfolio">
+        <h1 class="section-heading">Portfolio</h1>
+        <h4 class="section-sub-heading">Mes projets</h4>
+
+        <ul class="filter-box">
+          <li class="filter-item active">Tout</li>
+          <li class="filter-item">carte-de-visite</li>
+          <li class="filter-item">montage-photo</li>
+          <li class="filter-item">faire-part</li>
+          <li class="filter-item">poster</li>
+          <li class="filter-item">logo</li>
+          <li class="filter-item">autre</li>
+        </ul>
+
+        <div class="portfolio-items-group">
+          <div class="portfolio-item active">
+            <img src="assets/images/1.jpg" alt="" class="item-img" />
+            <h4 class="item-name">Série F1</h4>
+            <div class="item-icon">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+            <div class="item-category">poster</div>
+          </div>
+
+          <div class="portfolio-item active">
+            <img src="assets/images/2.jpg" alt="" class="item-img" />
+            <h4 class="item-name">Série minimaliste</h4>
+            <div class="item-icon">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+            <div class="item-category">poster</div>
+          </div>
+
+          <div class="portfolio-item active">
+            <img src="assets/images/3.jpg" alt="" class="item-img" />
+            <h4 class="item-name">Esteban</h4>
+            <div class="item-icon">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+            <div class="item-category">faire-part</div>
+          </div>
+
+          <div class="portfolio-item active">
+            <img src="assets/images/4.jpg" alt="" class="item-img" />
+            <h4 class="item-name">Manon</h4>
+            <div class="item-icon">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+            <div class="item-category">faire-part</div>
+          </div>
+
+          <div class="portfolio-item active">
+            <img src="assets/images/5.jpg" alt="" class="item-img" />
+            <h4 class="item-name">Couverture Facebook</h4>
+            <div class="item-icon">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+            <div class="item-category">montage-photo</div>
+          </div>
+
+          <div class="portfolio-item active">
+            <img src="assets/images/6.jpg" alt="" class="item-img" />
+            <h4 class="item-name">Couverture Facebook</h4>
+            <div class="item-icon">
+              <ion-icon name="image-outline"></ion-icon>
+            </div>
+            <div class="item-category">autre</div>
+          </div>
+        </div>
+      </section>
+      <!-- Fin page Portfolio-->
+
+      <!-- Page Contact -->
+      <section id="contact" class="page contact">
+        <h1 class="section-heading">Me contacter</h1>
+        <h4 class="section-sub-heading">Donnez-moi des nouvelles de moi</h4>
+
+        <div class="contact-form">
+          <form method="POST" action="contact.php">
+            <p>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Entrez votre nom complet *"
+                class="form__field"
+                required
+              />
+            </p>
+            <p>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Entrez votre adresse email *"
+                class="form__field"
+                required
+              />
+            </p>
+
+            <p>
+              <input
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Entrez votre numéro de téléphone"
+                class="form__field"
+              />
+            </p>
+            <p>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Entrez votre message ici... *"
+                required
+              ></textarea>
+            </p>
+            <p>
+              <input type="submit" value="Envoyer" class="btn-primary submit" />
+            </p>
+          </form>
+        </div>
+      </section>
+      <!-- Fin page Contact-->
+    </div>
+    <!-- Fin .container -->
+
+    <!-- Script principal -->
+    <script src="assets/js/main.js"></script>
+    <!-- ionicon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
